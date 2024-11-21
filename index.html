@@ -1,33 +1,105 @@
-<div style="text-align: center;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sponsorship Logos</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Centered container for all images */
+        .sponsor-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Styling for all logos */
+        .sponsor-container img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0; /* Space between images */
+            display: inline-block;
+        }
+
+        /* Make images responsive */
+        .sponsor-container a img {
+            width: auto;
+            height: auto;
+            max-width: 80%; /* Scale logos down on smaller screens */
+        }
+
+        /* Adjust font size for "Sponsored by" heading */
+        .sponsor-container p {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Responsive design adjustments */
+        @media (max-width: 768px) {
+            .sponsor-container p {
+                font-size: 1.2rem;
+            }
+
+            /* Stack logos vertically on smaller screens */
+            .sponsor-container img {
+                max-width: 90%;
+                margin: 15px auto; /* Center the images and give some space */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .sponsor-container p {
+                font-size: 1rem; /* Smaller font for very small screens */
+            }
+
+            /* Further reduce image size on very small screens */
+            .sponsor-container a img {
+                max-width: 100%; /* Ensure logos fit within the screen */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="sponsor-container">
     <p><strong>SPONSORED BY</strong></p>
     
     <!-- Aetna Logo -->
     <a href="https://www.aetna.com/" target="_blank" rel="noopener">
-        <img src="https://admodc.org/wp-content/uploads/2023/10/aetna_logo_reg_rgb_vio-300x59.png" alt="Aetna Logo" width="290" height="57" />
+        <img src="https://admodc.org/wp-content/uploads/2023/10/aetna_logo_reg_rgb_vio-300x59.png" alt="Aetna Logo" />
     </a>
 
     <!-- Pepco Logo -->
-    <img src="https://admodc.org/wp-content/uploads/2024/10/Pepco_new_logo.png" alt="Pepco Logo" width="265" height="83" />
+    <img src="https://admodc.org/wp-content/uploads/2024/10/Pepco_new_logo.png" alt="Pepco Logo" />
 
     <!-- EventsDC Logo -->
-    <img src="https://admodc.org/wp-content/uploads/2023/10/EventsDC-color-logo.png" alt="EventsDC Logo" width="128" height="99" />
+    <img src="https://admodc.org/wp-content/uploads/2023/10/EventsDC-color-logo.png" alt="EventsDC Logo" />
 
     <!-- Colonial Logo -->
     <a href="https://www.ecolonial.com/" target="_blank" rel="noopener">
-        <img src="https://admodc.org/wp-content/uploads/2022/09/GC_Logo_WhiteFill_heavyline_GiftedLogo_Light-1024x666.png" alt="Colonial Logo" width="280" height="182" />
+        <img src="https://admodc.org/wp-content/uploads/2022/09/GC_Logo_WhiteFill_heavyline_GiftedLogo_Light-1024x666.png" alt="Colonial Logo" />
     </a>
 
     <!-- Jubilee Housing Logo -->
-    <img src="https://admodc.org/wp-content/uploads/2022/09/Jubilee-Housing-Logo-Square-1024x972.png" alt="Jubilee Housing Logo" width="192" height="182" />
+    <img src="https://admodc.org/wp-content/uploads/2022/09/Jubilee-Housing-Logo-Square-1024x972.png" alt="Jubilee Housing Logo" />
 
     <!-- Colonial Square Logo -->
-    <img src="https://admodc.org/wp-content/uploads/2023/10/colonial-296x300.png" alt="Colonial Square Logo" width="112" height="113" />
+    <img src="https://admodc.org/wp-content/uploads/2023/10/colonial-296x300.png" alt="Colonial Square Logo" />
 
     <!-- Lars Eztkorn Law Logo -->
     <a href="https://www.larsetzkornlaw.com/" target="_blank" rel="noopener">
-        <img src="https://admodc.org/wp-content/uploads/2023/10/lars-admo-300x43.png" alt="Lars Eztkorn Law Logo" width="230" height="33" />
+        <img src="https://admodc.org/wp-content/uploads/2023/10/lars-admo-300x43.png" alt="Lars Eztkorn Law Logo" />
     </a>
 
     <!-- SW PNG Logo -->
-    <img src="https://admodc.org/wp-content/uploads/2024/10/SW-Png.png" alt="SW Logo" width="168" height="130" />
+    <img src="https://admodc.org/wp-content/uploads/2024/10/SW-Png.png" alt="SW Logo" />
 </div>
+
+</body>
+</html>
